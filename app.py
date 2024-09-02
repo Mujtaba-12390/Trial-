@@ -30,8 +30,10 @@ c = conn.cursor()
 
 c.execute("SELECT * from form_1")
 rows=c.fetchall()
+df=pd.DataFrame(rows)
+st.dataframe(df)
 
-st.write(rows)
+
 # 1st Interview Form
 if page == "1st Interview":
     st.header("1st Interview")
