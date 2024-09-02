@@ -40,14 +40,14 @@ if page == "1st Interview":
     st.header("1st Interview")
 
     with st.form(key='first_interview_form'):
-        full_name = st.text_input("Full Name", placeholder="Muhammad Kamran Waseem")
+        full_name = st.text_input("Full Name", placeholder="Enter your full name...")
         # Create columns for better layout
         col1, col2 = st.columns([1, 1])
 
         with col1:
             # Column 1: Personal Information and Work Details
-            contact1 = st.text_input("Contact #1", placeholder= "03151234567")
-            email1 = st.text_input("Email #1", placeholder="kamran.muhammad@yahoo.com")
+            contact1 = st.text_input("Contact #1", placeholder= "Enter your primary phone number...")
+            email1 = st.text_input("Email #1", placeholder="Enter your primary email..")
             country = st.selectbox("Country", ["Pakistan", "India", "United States", "Canada"], key="country")
             city = st.text_input("City", placeholder="Karachi")
             calling_date = st.date_input("Calling Date")
@@ -62,10 +62,10 @@ if page == "1st Interview":
 
         with col2:
             # Column 2: Candidate Status, Recruitment Source, Relocation Assistance, Reason, and Notes
-            contact2 = st.text_input("Contact #2", placeholder="03462345678")
-            email2 = st.text_input("Email #2", placeholder="kamran@gmail.com")  # Fixed typo in the variable name
-            state = st.text_input("State", placeholder="Sindh")
-            address = st.text_input("Address", placeholder="House-1, Gulshan e Maymar, XYZ, Karachi")
+            contact2 = st.text_input("Contact #2", placeholder="Enter your secondary phone number...")
+            email2 = st.text_input("Email #2", placeholder="Enter your secondary email...")  # Fixed typo in the variable name
+            state = st.text_input("State", placeholder="Enter state... ")
+            address = st.text_input("Address", placeholder="Enter full address...")
             col3, col4 = st.columns([1, 1])
             with col3:
                 time_selected = st.time_input("Calling Time", value=time(12, 0))
