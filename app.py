@@ -25,7 +25,7 @@ page = st.sidebar.selectbox("Select Page", ["1st Interview", "2nd Interview", "H
 db_path = 'Data_Sample.db'
 
 
-conn = sqlite3.connect(db_path)
+conn = sqlite3.connect(db_path, timeout=10)
 c = conn.cursor()
 
 # 1st Interview Form
