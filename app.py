@@ -28,6 +28,10 @@ db_path = 'Data_Sample.db'
 conn = sqlite3.connect(db_path, timeout=10)
 c = conn.cursor()
 
+c.execute("SELECT * from form_1")
+rows=c.fetchall()
+
+st.write(rows)
 # 1st Interview Form
 if page == "1st Interview":
     st.header("1st Interview")
