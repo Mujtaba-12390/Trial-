@@ -49,7 +49,7 @@ if page == "1st Interview":
             contact1 = st.text_input("Contact #1", placeholder= "Enter your primary phone number...")
             email1 = st.text_input("Email #1", placeholder="Enter your primary email..")
             country = st.selectbox("Country", ["Pakistan", "India", "United States", "Canada"], key="country")
-            city = st.text_input("City", placeholder="Karachi")
+            city = st.text_input("City", placeholder="Enter your city..")
             calling_date = st.date_input("Calling Date")
             source =st.selectbox("Source", ["Indeed", "LinkedIn", "Monster", "Dice", "Taldel", "traxccel"], key="source_1")
             expected_salary = st.number_input("Expected Salary", min_value=0)
