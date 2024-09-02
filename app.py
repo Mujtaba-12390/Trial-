@@ -22,7 +22,7 @@ page = st.sidebar.selectbox("Select Page", ["1st Interview", "2nd Interview", "H
 
 
 # Database connection
-db_path = 'Data_Sample_old.db'
+db_path = 'Data_Sample.db'
 
 
 conn = sqlite3.connect(db_path)
